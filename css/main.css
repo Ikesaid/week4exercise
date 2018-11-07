@@ -1,59 +1,309 @@
-body{
+nav {
 
+	display: inline-block;
+	background-color: rgb(254,146,10);
+	width: 100%;
+	height: 136px;
+	
+
+}
+
+nav a {
+
+	display: inline-block;
+	padding: 15px 15px;
+	font-size: 30px;
+	color: white;
+	margin-top: 1.75%;
+	float: right;
+
+}
+
+a.space {
+
+ 	position: absolute;
+ 	left: 5px;
+}
+
+
+
+
+/*section styles*/
+
+
+img.pic{
+
+	display: inline-block;
+	height: 350px;
+	width: 800px;
+	position: absolute;
+	bottom: 400px;
+	left: 100px;
+
+
+}
+
+
+section {
+
+	width: 100%;
+	height: 660px;
+	background-color: rgb(248,242,210);
+	display: inline-block;	
+}
+
+
+section p {
+
+	color: rgb(137,185,147);
+	font-size: 30px;
+	right: 50px;
+	position: absolute;
+	right: 300px;
+	bottom: 575px;	
+}
+
+
+div button, .bar, h1 {
+    
+	display: inline-block;
 	text-align: center;
-}
-
-.box{
-
-	display: inline-block; 
-	height: 100px;
-	width: 300px ;
-}
-
-.dimgrey{
-
-	background-color: dimgrey;
-
-}
-
-.blue{
-
-	background-color: blue;
-
-}
-
-.black{
-
-	background-color:black; 
-
-}
-.orange{
-
-	background-color: orange;
-
-}
-
-.container{
-
-	height: 200px;
-	width: 200px;
-	background-color: yellow;
 	
 }
 
 
+.bar {
 
-@media(max-width: 600px){
+	position: absolute;
+	bottom: 740px;
+	right: 8px;
+	height: 25px;
+}
 
-	.black, .orange{
+
+h1 {
+
+	position: absolute;
+	right: 315px;
+	bottom: 678px;
+	font-size: 35px;
+}
+
+button.left {
+
+	position: absolute;
+	right: 20px;
+	bottom: 200px;
+	background-color: rgb(137,185,147);
+	height: 50px; 
+	width: auto;
+}
+
+
+button.right {
+
+	position: absolute;
+	right: 150px;
+	bottom: 200px;
+	background-color: rgb(254,146,10);
+	height: 50px;
+	width: auto;
+}
+/*footer styles*/
+
+footer{
+
+	background-color: rgb(137,185,147);
+	width: 100%;
+	height: 200px;
+}
+
+
+footer iframe{
+
+	height: 80px;
+	width: 80px;
+	display: inline-block;
+	position: relative;
+	left: 800px;
+}
+
+
+/*media section*/
+
+@media(max-width: 700px ) {
+
+	nav{
+		width: 0 auto;
+
+	}
+
+	nav a, a.space{
+
+		position: relative;
+		display: inline-block;
+	}
+	.blog{
+
 		display: none;
 	}
 
+	
+
+	.bar{
+
+		position: absolute;
+		top: 100px;
+		right: 50px;
+
+	}
+	img.pic{
+
+		width: 100%;
+		position: absolute;
+		top:145px;
+		border-style: double;
+		left:10px;
+
+
+		
+
+	}
+
+	button.left {
+		width: 75px;
+		position: absolute;
+		bottom: -100px;
+		right: 110px;
+
+	}
+
+	 button.right {
+	 	width: 75px;
+	 	bottom: -100px;
+	 	right: 25px;
+	 	position: absolute;
+	 }
+
+	 h1{
+	 	position: absolute;
+	 	left: 50px;
+	 	top: 600px;
+	 }
+section p{
+
+		position: absolute;
+		font-size: 20px;
+		text-align: center;
+		top: 600px;
+		right: 270px;
+
+}
+footer{
+
+	width: 100%;
 }
 
-@media(min-width: 1000px){
+footer iframe{
+	position: relative;
+	left: 300px;
+	bottom: -50px;
 
-	div{
-		width: 100%
+}
+
+
+}
+
+@media(max-width: 550px ) {
+
+	nav{
+		width: 0 auto;
+
 	}
+
+	nav a{
+
+		display: none;
+	}
+
+	a.space{
+
+		display: initial;
+		position: absolute;
+		top:25px;
+		left: 100px;
+		
+	}
+
+	.bar{
+
+		position: absolute;
+		top: 85px;
+		left: 100px;
+
+	}
+	img.pic{
+
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top:145px;
+		border-style: double;
+		left:10px;
+
+
+		
+
+	}
+
+	/*button.left {
+		width: 75px;
+		bottom: 10px;
+		left: 150px;
+		position: absolute;
+
+	}
+
+	 button.right {
+	 	width: 75px;
+	 	bottom: 10px;
+	 	left: 250px;
+	 	position: absolute;
+	 }*/
+
+	 div {
+	 	position: relative;
+	 	bottom: -525px;
+	 }
+
+	 h1{
+	 	position: absolute;
+	 	left: 50px;
+	 	top: 550px;
+	 }
+section p{
+
+		position: absolute;
+		font-size: 20px;
+		text-align: center;
+		top: 590px;
+		right: 50px;
+
+		
+
+
+}
+footer{
+
+	width: 100%;
+}
+
+footer iframe{
+	position: relative;
+	left: 150px;
+	bottom: -50px;
+
+}
+
+
 }
